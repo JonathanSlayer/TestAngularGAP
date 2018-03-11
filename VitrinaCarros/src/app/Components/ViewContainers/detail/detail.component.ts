@@ -3,7 +3,7 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { CarServiceService } from '../../../Services/CarService/car-service.service';
 
-import { Car } from '../../../Models/cars.model';
+import { Car,CarDetail } from '../../../Models/cars.model';
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
@@ -15,9 +15,8 @@ export class DetailComponent implements OnInit {
   @Input() id2: string;
   car: Car;
   constructor(private carServiceService: CarServiceService, private location: Location, private activatedRoute: ActivatedRoute) { }
-
-  ngOnInit() {
-    //  this.car.detail=null;
+ 
+  ngOnInit() {  
     const id = +this.activatedRoute.snapshot.params['id'];
       this.getCarById(id);
   }
