@@ -1,0 +1,35 @@
+﻿[
+  {
+    "id": 1,
+    "description": "The best quality of shoes in a green color",
+    "name": "green shoes",
+    "price": 20.15,
+    "total_in_shelf": 25,
+    "total_in_vault": 40,
+    "store_name": "Super Store",
+    "store_id": 1
+
+
+  },
+  {
+    "id": 2,
+    "description": "The best quality of pants in a blue color",
+    "name": "blue pants",
+    "price": 25.15,
+    "total_in_shelf": 15,
+    "total_in_vault": 30,
+    "store_name": "Super Store",
+    "store_id": 1
+  },
+  {
+    "id": 3,
+    "description": "The best quality of shirts in a red color",
+    "name": "Red Shirts",
+    "price": 15.15,
+    "total_in_shelf": 42,
+    "total_in_vault": 60,
+    "store_name": "Super Store 2",
+    "store_id": 2
+  }
+]
+ 

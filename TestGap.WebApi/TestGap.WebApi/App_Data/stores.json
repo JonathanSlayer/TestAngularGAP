@@ -1,0 +1,12 @@
+﻿ [
+  {
+    "id": 1,
+    "address": "Somewhere over the rainbow",
+    "name": "Super Store"
+  },
+  {
+    "id": 2,
+    "address": "street number 2",
+    "name": "wallmart"
+  }
+]
