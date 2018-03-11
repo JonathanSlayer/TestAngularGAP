@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "img": "carro1.png",
+        "model": "Camioneta",
+        "year": "2015",
+        "brand": "Dodge",
+        "price": "25000",
+        "detail": {
+            "description": "Muy bueno recien reparado !!!",
+            "contactName": "pepito perez",
+            "Phone": 300354345890
+        }
+    },
+    {
+        "id": 2,
+        "img": "carro2.png",
+        "model": "Camioneta",
+        "year": "2014",
+        "brand": "Chevrolet",
+        "price": "20000",
+        "detail": {
+            "description": "todo al dia  !!!",
+            "contactName": "roberto sanchez",
+            "Phone": 33445566
+        }
+    },
+    {
+        "id": 3,
+        "img": "carro3.png",
+        "model": "Automobil",
+        "year": "2009",
+        "brand": "Bmw",
+        "price": "29000",
+        "detail": {
+            "description": "garantia de 2 años  !!!",
+            "contactName": "sara luna",
+            "Phone": 45567765
+        }
+    },
+    {
+        "id": 4,
+        "img": "carro4.png",
+        "model": "Camioneta",
+        "year": "2016",
+        "brand": "Ford",
+        "price": "35000",
+        "detail": {
+            "description": "Muy bueno como nuevo!!!",
+            "contactName": "juan perez",
+            "Phone": 30067890
+        }
+    },
+    {
+        "id": 5,
+        "img": "carro5.png",
+        "model": "Automobil",
+        "year": "2017",
+        "brand": "Bmw",
+        "price": "45000",
+        "detail": {
+            "description": "el mejor carro de todos !!!",
+            "contactName": "marcela diaz",
+            "Phone": 45655666
+        }
+    },
+    {
+        "id": 6,
+        "img": "carro6.png",
+        "model": "Automobil",
+        "year": "2015",
+        "brand": "Kia",
+        "price": "23000",
+        "detail": {
+            "description": "Kia como nuevo regalo motivo viaje!!!",
+            "contactName": "pedro ramirez",
+            "Phone": 45645456
+        }
+    }
+]

@@ -1,0 +1,14 @@
+<div class="thumbnail " >
+  <a >
+    <img class="pointer" routerLink="/detail/{{car.id}}" src="/assets/img/{{car.img}}" style="width:100%">
+    <div class="caption">
+       <div *ngIf="!hidecheck">
+         <span>Seleccione para comparar</span> <span><input [(ngModel)]="car.compareCheck" (change)="onCompareCars(car)" type="checkbox"></span>
+       </div>     
+      <p>{{ car.model}}</p>
+      <p>{{car.year}}</p>
+      <p>{{car.brand}}</p>
+      <p class="badge">{{car.price | currency:'$ '}}</p>
+    </div>
+  </a>
+</div>

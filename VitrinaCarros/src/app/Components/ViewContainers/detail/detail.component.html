@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+  <div class="panel-heading"> <b>Detalle {{car.brand}} {{car.year}}</b>
+    <button (click)="goBack()" class="btn btn-primary pull-right">Volver</button>
+    <div class="clearfix"></div>
+  </div>
+  <div class="panel-body">
+    <app-car-thumbnail [hidecheck]="true" [car]="car"></app-car-thumbnail>
+  </div>
+  <div class="panel-footer">
+    <app-car-detail [detail]="car.detail"></app-car-detail>
+  </div>
+</div>
