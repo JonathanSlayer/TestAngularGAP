@@ -61,10 +61,19 @@ export class MainComponent implements OnInit {
           }
         }
       } else {
-        this.comapreIdList.push(car);
+        if(!car.compareCheck){
+          let idx2 = this.comapreIdList.findIndex(i => i.id == car.id);
+          if (idx2 != -1) {
+            this.comapreIdList.splice(idx2, 1);         
+          }          
+        }else{
+          this.comapreIdList.push(car);
+        }        
       }
       if (this.comapreIdList.length == 2 || this.comapreIdList.length == 3) {
         this.disableCompareBtn = false;
+      }else{
+        this.disableCompareBtn = true;
       }
     });
 
