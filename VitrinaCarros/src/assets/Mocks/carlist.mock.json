@@ -76,5 +76,88 @@
             "contactName": "pedro ramirez",
             "Phone": 45645456
         }
+    },
+    {
+        "id": 7,
+        "img": "carro7.jpg",
+        "model": "Camioneta",
+        "year": "2018",
+        "brand": "audi",
+        "price": "50000",
+        "detail": {
+            "description": "audi como nuevo regalo motivo viaje!!!",
+            "contactName": "carlos alberto",
+            "Phone": 66789999
+        }
+    }
+    ,
+    {
+        "id": 8,
+        "img": "carro8.jpg",
+        "model": "Automobil",
+        "year": "2018",
+        "brand": "Mercedes",
+        "price": "55000",
+        "detail": {
+            "description": "Mercedes original!!!",
+            "contactName": "felipe alberto",
+            "Phone": 353553453
+        }
+    }
+    ,
+    {
+        "id": 9,
+        "img": "carro9.jpg",
+        "model": "Automobil",
+        "year": "2017",
+        "brand": "audi",
+        "price": "41000",
+        "detail": {
+            "description": "audi turbo gti injection!!!",
+            "contactName": "david adolfo",
+            "Phone": 776665555
+        }
+    }
+    ,
+    {
+        "id": 10,
+        "img": "carro10.jpg",
+        "model": "Automobil",
+        "year": "2018",
+        "brand": "audi",
+        "price": "80000",
+        "detail": {
+            "description": "audi TT 1500 km unico dueño!!!",
+            "contactName": "sandra casas",
+            "Phone": 54656456
+        }
+    }
+    ,
+    {
+        "id": 11,
+        "img": "carro11.jpg",
+        "model": "Camioneta",
+        "year": "2014",
+        "brand": "Range Rover",
+        "price": "30000",
+        "detail": {
+            "description": "Range Rover turbo 5 puertas!!!",
+            "contactName": "camilo escobar",
+            "Phone": 78686787
+        }
+    }
+    ,
+    {
+        "id": 12,
+        "img": "carro12.jpg",
+        "model": "Automobil",
+        "year": "2018",
+        "brand": "seat",
+        "price": "15000",
+        "detail": {
+            "description": "seat toledo recien reparado soat vigente !!!",
+            "contactName": "liliana misas",
+            "Phone": 35353455
+        }
     }
 ]

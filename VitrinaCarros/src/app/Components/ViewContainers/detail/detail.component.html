@@ -3,8 +3,8 @@
     <button (click)="goBack()" class="btn btn-primary pull-right">Volver</button>
     <div class="clearfix"></div>
   </div>
-  <div class="panel-body">
-    <app-car-thumbnail [hidecheck]="true" [car]="car"></app-car-thumbnail>
+  <div class="panel-body ">
+    <app-car-thumbnail class="col-md-offset-3 col-md-6" [hidecheck]="true" [car]="car"></app-car-thumbnail>
   </div>
   <div class="panel-footer">
     <app-car-detail [detail]="car.detail"></app-car-detail>

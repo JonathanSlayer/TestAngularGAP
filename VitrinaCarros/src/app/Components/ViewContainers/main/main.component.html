@@ -8,13 +8,13 @@
             type="text">
         </div>
         <div class="form-group">         
-          <button class="btn btn-primary" [disabled]="comapreIdList.length!=2" (click)="onClickcompareCars()">Comparar</button>
+          <button class="btn btn-primary" [disabled]="disableCompareBtn" (click)="onClickcompareCars()">Comparar</button>
         </div>
       </form>
     </div>
   </div>
   <div class="row">
-    <div *ngFor="let car of carList | sort:'brand'" class="col-md-4">
+    <div *ngFor="let car of carList | sort:'brand'" class="col-md-2">
       <app-car-thumbnail [hidecheck]="false" (compareCars)="compareCars($event)" [car]="car"></app-car-thumbnail>
     </div>
   </div>

@@ -4,6 +4,8 @@ import { DataStorageService } from '../../../Services/DataStore/data-storage.ser
 import { Car } from '../../../Models/cars.model';
 import { Router } from '@angular/router';
 import { element } from 'protractor';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -14,7 +16,8 @@ export class MainComponent implements OnInit {
   carList: Car[];
   filterText: string = "";
   comapreIdList: Car[];
-  constructor(private dataStorageService: DataStorageService, private carServiceService: CarServiceService, private router: Router) { }
+  disableCompareBtn: boolean = true;
+  constructor(private ngbModal: NgbModal, private dataStorageService: DataStorageService, private carServiceService: CarServiceService, private router: Router) { }
 
   ngOnInit() {
     this.comapreIdList = [];
@@ -31,7 +34,7 @@ export class MainComponent implements OnInit {
       return;
     }
     this.carList = this.carList.filter(
-      car => car.brand.search(newModel) != -1);
+      car => car.brand.toUpperCase().search(newModel.toUpperCase()) != -1);
   }
 
   onClickcompareCars() {
@@ -41,7 +44,7 @@ export class MainComponent implements OnInit {
 
   compareCars(car) {
     setTimeout(() => {
-      if (this.comapreIdList.length >= 2) {
+      if (this.comapreIdList.length >= 3) {
         let idx = this.carList.findIndex(i => i.id == car.id);
         if (idx != -1) {
           if (!this.carList[idx].compareCheck) {
@@ -56,6 +59,10 @@ export class MainComponent implements OnInit {
       } else {
         this.comapreIdList.push(car);
       }
+      if (this.comapreIdList.length == 2 || this.comapreIdList.length == 3) {
+        this.disableCompareBtn = false;
+      }
     });
+
   }
 }

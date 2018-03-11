@@ -17,6 +17,7 @@ export class DetailComponent implements OnInit {
   constructor(private carServiceService: CarServiceService, private location: Location, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    //  this.car.detail=null;
     const id = +this.activatedRoute.snapshot.params['id'];
       this.getCarById(id);
   }

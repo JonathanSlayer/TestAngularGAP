@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { appRoutingModule } from './Modules/router/router.module';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { NgbModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 /*Components and pipes*/
 import { AppComponent } from './app.component';
@@ -14,8 +15,10 @@ import { DetailComponent } from './Components/ViewContainers/detail/detail.compo
 import { CarDetailComponent } from './Components/car-detail/car-detail.component';
 import { CompareComponent } from './Components/ViewContainers/compare/compare.component';
 
+
 /*Services */
 import { DataStorageService } from './Services/DataStore/data-storage.service';
+
 
 @NgModule({
   declarations: [
@@ -31,9 +34,10 @@ import { DataStorageService } from './Services/DataStore/data-storage.service';
     BrowserModule,
     appRoutingModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    NgbModule.forRoot()
   ],
-  providers: [DataStorageService],
+  providers: [DataStorageService, NgbModal],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

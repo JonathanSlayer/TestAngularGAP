@@ -15,6 +15,7 @@ export class CompareComponent implements OnInit {
   constructor(private router:Router, private location: Location, private dataStorageService: DataStorageService) { }
 
   ngOnInit() {
+    this.comapreIdList=[];
     if( this.dataStorageService.storage===undefined){
       this.router.navigate(['main']);
       return;
