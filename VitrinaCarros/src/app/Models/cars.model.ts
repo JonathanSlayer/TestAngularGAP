@@ -7,6 +7,8 @@ export class Car {
     price: number;
     compareCheck: boolean;
     detail: CarDetail;
+    outstanding:boolean;
+    showalert:boolean;
 }
 
 export class CarDetail {

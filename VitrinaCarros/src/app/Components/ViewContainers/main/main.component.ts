@@ -54,6 +54,10 @@ export class MainComponent implements OnInit {
             }
           } else {
             this.carList[idx].compareCheck = false;
+            this.carList[idx].showalert=true;
+            setTimeout(() => {
+              this.carList[idx].showalert=false;
+            },3000);
           }
         }
       } else {

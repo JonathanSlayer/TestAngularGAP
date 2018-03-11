@@ -1,7 +1,11 @@
+<div class="alert alert-warning" *ngIf="car.showalert"> 
+    <strong>Mensaje!</strong> Solo se pueden comparar maximo 3 vehiculos..
+  </div>
 <div class="thumbnail " >
   <a >
     <img class="pointer" routerLink="/detail/{{car.id}}" src="/assets/img/{{car.img}}" style="width:100%">
     <div class="caption">
+       <div *ngIf="car.outstanding"><h4><span class="label label-success">Destacado!!</span></h4></div>
        <div *ngIf="!hidecheck">
          <span>Seleccione para comparar</span> <span><input [(ngModel)]="car.compareCheck" (change)="onCompareCars(car)" type="checkbox"></span>
        </div>     

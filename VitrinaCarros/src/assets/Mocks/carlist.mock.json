@@ -10,7 +10,10 @@
             "description": "Muy bueno recien reparado !!!",
             "contactName": "pepito perez",
             "Phone": 300354345890
-        }
+        },
+        "outstanding":false
+        ,
+        "showalert":false
     },
     {
         "id": 2,
@@ -23,7 +26,9 @@
             "description": "todo al dia  !!!",
             "contactName": "roberto sanchez",
             "Phone": 33445566
-        }
+        },
+        "outstanding":false,
+        "showalert":false
     },
     {
         "id": 3,
@@ -36,7 +41,9 @@
             "description": "garantia de 2 años  !!!",
             "contactName": "sara luna",
             "Phone": 45567765
-        }
+        },
+        "outstanding":true,
+        "showalert":false
     },
     {
         "id": 4,
@@ -49,7 +56,9 @@
             "description": "Muy bueno como nuevo!!!",
             "contactName": "juan perez",
             "Phone": 30067890
-        }
+        },
+        "outstanding":false,
+        "showalert":false
     },
     {
         "id": 5,
@@ -62,7 +71,9 @@
             "description": "el mejor carro de todos !!!",
             "contactName": "marcela diaz",
             "Phone": 45655666
-        }
+        },
+        "outstanding":true,
+        "showalert":false
     },
     {
         "id": 6,
@@ -75,7 +86,9 @@
             "description": "Kia como nuevo regalo motivo viaje!!!",
             "contactName": "pedro ramirez",
             "Phone": 45645456
-        }
+        },
+        "outstanding":true,
+        "showalert":false
     },
     {
         "id": 7,
@@ -88,7 +101,9 @@
             "description": "audi como nuevo regalo motivo viaje!!!",
             "contactName": "carlos alberto",
             "Phone": 66789999
-        }
+        },
+        "outstanding":true,
+        "showalert":false
     }
     ,
     {
@@ -102,7 +117,9 @@
             "description": "Mercedes original!!!",
             "contactName": "felipe alberto",
             "Phone": 353553453
-        }
+        },
+        "outstanding":true,
+        "showalert":false
     }
     ,
     {
@@ -116,7 +133,9 @@
             "description": "audi turbo gti injection!!!",
             "contactName": "david adolfo",
             "Phone": 776665555
-        }
+        },
+        "outstanding":false,
+        "showalert":false
     }
     ,
     {
@@ -130,7 +149,9 @@
             "description": "audi TT 1500 km unico dueño!!!",
             "contactName": "sandra casas",
             "Phone": 54656456
-        }
+        },
+        "outstanding":true,
+        "showalert":false
     }
     ,
     {
@@ -144,7 +165,9 @@
             "description": "Range Rover turbo 5 puertas!!!",
             "contactName": "camilo escobar",
             "Phone": 78686787
-        }
+        },
+        "outstanding":false,
+        "showalert":false
     }
     ,
     {
@@ -158,6 +181,8 @@
             "description": "seat toledo recien reparado soat vigente !!!",
             "contactName": "liliana misas",
             "Phone": 35353455
-        }
+        },
+        "outstanding":false,
+        "showalert":false
     }
 ]
