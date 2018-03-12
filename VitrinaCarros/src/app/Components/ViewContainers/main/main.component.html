@@ -12,11 +12,19 @@
         </div>
       </form>
     </div>   
+    <!-- <div class="col-md-4">
+        <label for="inputsm">Odernar por precio:</label>
+        <select class="btn btn-default" [(ngModel)]="order"  (change)="orderBy()">
+            <option></option>
+          <option value="1">menor precio</option>
+          <option value="2">mayor precio</option>
+        </select>
+    </div> -->
   </div>
   <br>
   <div class="row">
-    <div *ngFor="let car of carList | sort:'brand'" class="col-md-2">
-      <app-car-thumbnail [hidecheck]="false" (compareCars)="compareCars($event)" [car]="car"></app-car-thumbnail>
+    <div *ngFor="let car of carList | sort:'brand'" >    
+      <app-car-thumbnail class="col-md-2" [hidecheck]="false" (compareCars)="compareCars($event)" [car]="car"></app-car-thumbnail>
     </div>
   </div>
 </div>

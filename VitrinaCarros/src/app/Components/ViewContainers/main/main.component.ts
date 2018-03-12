@@ -17,6 +17,7 @@ export class MainComponent implements OnInit {
   filterText: string = "";
   comapreIdList: Car[];
   disableCompareBtn: boolean = true;
+  order: string;
   constructor(private ngbModal: NgbModal, private dataStorageService: DataStorageService, private carServiceService: CarServiceService, private router: Router) { }
 
   ngOnInit() {
@@ -42,6 +43,14 @@ export class MainComponent implements OnInit {
     this.router.navigate(['compare']);
   }
 
+  orderBy() {
+    if (this.order=="1") {
+      this.carList = this.carList.sort((a, b) => { return a.price - b.price });
+    } else {
+      this.carList = this.carList.sort((a, b) => { return   b.price -a.price});
+    }
+  }
+
   compareCars(car) {
     setTimeout(() => {
       if (this.comapreIdList.length >= 3) {
@@ -54,25 +63,25 @@ export class MainComponent implements OnInit {
             }
           } else {
             this.carList[idx].compareCheck = false;
-            this.carList[idx].showalert=true;
+            this.carList[idx].showalert = true;
             setTimeout(() => {
-              this.carList[idx].showalert=false;
-            },3000);
+              this.carList[idx].showalert = false;
+            }, 3000);
           }
         }
       } else {
-        if(!car.compareCheck){
+        if (!car.compareCheck) {
           let idx2 = this.comapreIdList.findIndex(i => i.id == car.id);
           if (idx2 != -1) {
-            this.comapreIdList.splice(idx2, 1);         
-          }          
-        }else{
+            this.comapreIdList.splice(idx2, 1);
+          }
+        } else {
           this.comapreIdList.push(car);
-        }        
+        }
       }
       if (this.comapreIdList.length == 2 || this.comapreIdList.length == 3) {
         this.disableCompareBtn = false;
-      }else{
+      } else {
         this.disableCompareBtn = true;
       }
     });
